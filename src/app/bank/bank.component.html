@@ -1,0 +1,48 @@
+<div class="main-content" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Create Bank</h4>
+                        <br>
+                        <div class="category" (click)="listPage()" style="cursor: hand; cursor: pointer;">
+                            <app-icons  class="pe-7s-menu">List</app-icons>
+                        </div>
+                    </div>
+                    <div class="content">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input [(ngModel)]="name" type="text" type="text" class="form-control" placeholder="Bank Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Branch Name</label>
+                                    <input [(ngModel)]="branchName" type="text" class="form-control" placeholder="Branch Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Code</label>
+                                    <input [(ngModel)]="code" type="text" class="form-control" placeholder="Bank Code">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button (click)="save()" class="btn btn-info btn-fill pull-left">Save</button>
+                        <div class="clearfix"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

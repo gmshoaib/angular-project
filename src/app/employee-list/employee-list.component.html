@@ -1,0 +1,41 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Employee List</h4>
+                        <br>
+                        <div class="category" (click)="create()" style="cursor: hand; cursor: pointer;">
+                            <app-icons  class="pe-7s-pen">Create</app-icons>
+                        </div>
+
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                            <tr>
+                                <th *ngFor="let cell of tableHeader.headerRow">{{ cell }}</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr *ngFor="let row of employeeList; let i = index">
+                                <td> {{i + 1}}</td>
+                                <td>{{row.name}}</td>
+                                <td>{{row.empId}}</td>
+                                <td>{{row.mobileNo}}</td>
+                                <td>{{row.basic}}</td>
+                                <td>{{row.medical}}</td>
+                                <td>{{row.houseRent}}</td>
+                                <td>{{row.gross}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
